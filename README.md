@@ -17,4 +17,9 @@ The plots below show the histogram of employee turnover  (left = 1, or 0) by the
 
 Prior to modelling, categorical variables are encoded whenver necessary, and features deemed irrelevant (though hypothesis testing) are dropped.
 ## Modeling and Evaluation
+A logistic regression model and a random forest model with 4-fold cross validation were constructed to predict employee turnover. The recall rate was chose as the refit parameter in both models, as it's important to minize false negatives (employees who have left the company but are predicted as stayed by the model) in this business context. 
+The random forest model performed very well to predict employee turnover, with an accuracy of 99%, and a recall of 93%. In contrast, the logistic model achieved an accuracy of 81% and a recall of 87%.
+The plot below shows that the employee's satisfaction level, time spent with the company, and average hours worked per project were the top three most important features in determining an employee who has left the company from one that stayed.
+
+![Feature importances of the random forest model](images/Feature_importance_rf.png)
 ## Conclusion
