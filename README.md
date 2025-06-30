@@ -7,5 +7,14 @@ The Salifort Motor leadership team has asked for a model to predict employee tur
 An employee turnover prediction model can be used by corporate organization in two ways. The first is bottom-up, where the model is used to predict if certain individuals (e.g. high potential employees, etc.) are likely to leave the company and the company can proactively engage with the employees to prevent turnover. The other way the model can be used is top-down, where insights from the model, such as feature importance, can help the organization implement measures to improve employee retention across the entire organization. However, this requires that the model is interpretable to certain extent.
 ## Data Understanding
 The HR survey dataset came from [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv) The data consisted of 14,999 rows and 10 columns. After de-duplication the number of rows is reduced to 11,991. The features include anonymous information on the employee's job satisfaction, tenure with the company, average monthly hours and salary levels, among others. 
+The plots below show the histogram of employee turnover  (left = 1, or 0) by the satisfaction level, the time in years employeed by the company, and the average hours worked per project, respectively. The last feature is an engineerd feature based on total number of projects, average monthly working hours, and years employed.
+
+![Turnover by satisfaction histogram](images/Turnover_by_satisfaction_hist.png)
+
+![Turnover by time spent with company histogram](images/Turnover_by_time_spent_hist.png)
+
+![Turnover by average hours worked per project histogram](images/Turnover_by_avg_hours_per_project_hist.png)
+
+Prior to modelling, categorical variables are encoded whenver necessary, and features deemed irrelevant (though hypothesis testing) are dropped.
 ## Modeling and Evaluation
 ## Conclusion
