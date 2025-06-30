@@ -23,3 +23,4 @@ The plot below shows that the employee's satisfaction level, time spent with the
 
 ![Feature importances of the random forest model](images/Feature_importance_rf.png)
 ## Conclusion
+The random forest model can be deployed to predict employee turnover based on future survey results. As a consequence, the HR department can proactively reach out to individuals, whom the model predicts will likely leave the company. Additionally, based on the insight from the feature imporance analysis, the company can implement certain top-down measures to improve empoyee retention. A detailed list of recommendations and suggestions can be found in the [executive summaries](Executive_summaries_presentation.pdf).
